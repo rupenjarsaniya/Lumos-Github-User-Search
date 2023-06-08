@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.main {
+  background-color: #161b22;
+  color: #f7f7f7;
   min-height: 100vh;
+  /* #2f81f7 */
+}
+
+.wrap {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1200px;
+}
+
+.heading {
+  color: #2f81f7;
+}
+
+.searchWrapper,
+.sortWrapper {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.searchInput,
+.userSelect {
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  background: #21262d;
+  color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  background: #21262d;
+  color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 1;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  min-width: 400px;
+  width: 600px;
+  border-bottom: 1px solid #21262d;
+  cursor: pointer;
+}
+
+.cardRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cardRight p {
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  background: #21262d;
+  color: #f7f7f7;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.9;
 }
